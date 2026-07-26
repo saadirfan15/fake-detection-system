@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+.venv/
+venv/
+
+# TensorFlow
+logs/
+checkpoints/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+dataset/
+
+# Trained Models (optional if too large)
+models/*.h5
+models/*.keras
+
+# OS
+.DS_Store
+Thumbs.db
