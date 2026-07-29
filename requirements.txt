@@ -1,5 +1,13 @@
-opencv-python
-tensorflow
+# opencv-python
+# tensorflow
+# numpy
+# pillow
+# flask
+# matplotlib
+# scikit-learn
+
+tensorflow==2.15.0
+opencv-python-headless
 numpy
 pillow
 flask
