@@ -25,3 +25,6 @@ models/*.keras
 # OS
 .DS_Store
 Thumbs.db
+
+dataset/
+static/uploads/
