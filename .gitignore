@@ -19,8 +19,8 @@ checkpoints/
 
 
 # Trained Models (optional if too large)
-# models/*.h5
-# models/*.keras
+models/*.h5
+models/*.keras
 
 # OS
 .DS_Store
