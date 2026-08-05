@@ -1,6 +1,7 @@
 ﻿import cv2
 import numpy as np
 import tensorflow as tf
+from tensorflow.keras.models import load_model
 import os
 
 def predict_currency(image_path):
@@ -13,7 +14,8 @@ def predict_currency(image_path):
     if not os.path.exists(model_path):
         raise FileNotFoundError(f"Model not found at {model_path}")
 
-    model = tf.keras.models.load_model(model_path)
+    custom_objects = {'InputLayer': tf.keras.layers.InputLayer}
+    model = load_model(model_path, compile=False, custom_objects=custom_objects)
 
     img = cv2.imread(image_path)
     if img is None:
