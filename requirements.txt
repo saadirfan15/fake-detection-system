@@ -7,7 +7,6 @@
 # scikit-learn
 
 tensorflow==2.15.0
-keras==3.4.1
 opencv-python-headless
 numpy
 pillow
