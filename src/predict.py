@@ -10,7 +10,7 @@ def predict_currency(image_path):
     make prediction, and highlight suspicious regions if confidence < 80%.
     Returns prediction string and saves annotated image if applicable.
     """
-    model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'currency_model.h5')
+    model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'currency_model.keras')
     if not os.path.exists(model_path):
         raise FileNotFoundError(f"Model not found at {model_path}")
 
